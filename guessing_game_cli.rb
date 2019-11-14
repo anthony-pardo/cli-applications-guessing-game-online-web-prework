@@ -1,5 +1,5 @@
 def run_guessing_game()
-  num = rand(1..6)
+  num = rand(1...6)
   puts "Please enter your guess"
   guess = gets.chomp
   if guess == num 
@@ -7,6 +7,6 @@ def run_guessing_game()
   elsif guess == "exit"
     puts "Goodbye!"
   else 
-    puts "Sorry the computer guessed #{num}"
+    puts "Sorry! The computer guessed #{num}"
   end
 end
